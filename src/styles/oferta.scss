@@ -1,0 +1,127 @@
+.container__oferta {
+    background-color: black;
+    height: 330px;
+
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+
+    @include tablet{
+        height: 230px;
+    }
+
+    @include desktop {
+        height: 270px;
+    }
+
+
+}
+
+.box__uno {
+    text-align: center !important;
+    margin-right: 0rem;
+    margin-left: 0rem;
+
+    @include tablet{
+        text-align: end !important;
+    }
+
+    @include desktop {
+        
+        margin-right: 1rem;
+        margin-left: -3rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+        font-family: Baron;
+        color: white;
+        letter-spacing: 1.5px;
+        font-size: 1.6rem;
+        line-height: 2rem;
+
+        @include desktop {
+            font-size: 2rem;
+            letter-spacing: 2px;
+            font-size: 2.3rem;
+            line-height: 2.5rem;
+        }
+
+        spam {
+            color: #F1BC83;
+        }
+    }
+
+
+}
+
+.box__dos {
+    text-align: center;
+
+    @include tablet{
+        text-align: start;
+        margin-left: 1rem;
+    }
+    
+
+    h4 {
+        margin-top: -5rem;
+        color: #F1BC83;
+        font-size: 5rem;
+        font-family: Baron;
+
+        @include tablet{
+            margin-top: -1rem;
+        }
+
+        @include desktop {
+            margin-top: -1.5rem;
+            color: #F1BC83;
+            font-size: 7.2rem;
+            font-family: Baron;
+
+        }
+
+    }
+
+    p {
+        margin-top: -1rem;
+        margin-left: .5rem;
+        font-size: 1.5rem;
+        font-family: Baron;
+        color: white;
+        letter-spacing: 1px;
+
+    }
+}
+
+.btn__oferta {
+
+    width: 100%;
+    margin-top: -4rem;
+
+    a {
+        text-decoration: none;
+        list-style: none;
+        color: black;
+        background-color: white;
+        border: 1px solid white;
+        border-radius: 1rem;
+        padding: 5px 32px;
+        font-family: Roboto;
+        font-weight: bolder;
+        font-size: 1rem;
+
+        @include desktop{
+            padding: 5px 25px;
+        }
+
+        &:hover {
+            color: black;
+        }
+
+    }
+}

@@ -1,0 +1,85 @@
+//Corrector padding
+html{
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+*,
+*:after,
+*:before{
+    box-sizing: inherit;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+//Fuentes
+@font-face{
+    font-family: Baron;
+    src: url(../fonts/Baron-Neue.otf);
+}
+@font-face{
+    font-family: Roboto;
+    src: url(../fonts/RobotoCondensed-Regular.ttf);
+}
+
+@font-face{
+    font-family: Deluce;
+    src: url(../fonts/Deluce.ttf);
+}
+
+//Media quieries
+$telefono: 375px;
+$telefonoGrande: 414px;
+$tablet: 768px;
+$desktop: 1200px;
+$desktopGrande: 1400px;
+
+//Media queries
+@mixin telefono {
+    @media only screen and (min-width: #{$telefono}){
+        @content;
+    }   
+}
+@mixin telefonoGrande {
+    @media only screen and (min-width: #{$telefonoGrande}){
+        @content;
+    }  
+}
+@mixin tablet  {
+    @media only screen and (min-width: #{$tablet}){
+        @content;
+    }   
+}
+
+@mixin desktop {
+    @media only screen and (min-width: #{$desktop}){
+        @content;
+    }   
+}
+@mixin desktopGrande {
+    @media only screen and (min-width: #{$desktopGrande}){
+        @content;
+    }
+    
+}
+
+
+@import './slider.scss';
+@import './estilo.scss';
+@import './oferta.scss';
+@import './somos.scss';
+@import './aplicaiones.scss';
+@import './muestras.scss';
+@import './formulario.scss';
+@import './distribuidores.scss';
+@import './footer.scss'
+
+

@@ -1,0 +1,89 @@
+.container__aplicaciones{
+    margin-top: -3rem;
+    height: 485px;
+    width: 100%;
+    background-color: #F2F2F2;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 3rem;
+
+    @include telefonoGrande{
+        flex-direction: column;
+    }
+
+    @include tablet{
+        height: 260px;
+        flex-direction: row;
+        padding-top: 3rem;
+    }
+
+    @include desktop{
+        margin-top: inherit;
+        padding-top: 2rem;
+    }
+
+    .box__uno, .box__dos{
+        text-align: center;
+        padding: 0rem 2rem;
+        
+    }
+
+    .box__uno{
+        
+        text-align: end !important;
+        margin-right: 0rem;
+        margin-left: 0rem;
+
+        @include telefonoGrande{
+            text-align: center !important;
+            margin-top: 3rem;
+        }
+
+        @include tablet{
+            margin-top: 0rem;
+        }
+        @include desktop{
+            text-align: end !important;
+            margin-top: -.1rem;
+            
+        }
+    }
+
+    p{
+        margin-top: 1rem;
+        text-align: center;
+        font-size: 1rem;
+        font-family: Roboto;
+        font-weight: bolder;
+        color: black;
+    }
+
+    img{
+        height: 70px;
+    }
+
+    a{
+        text-align: center;
+        align-self: center;
+        text-decoration: none;
+        list-style: none;
+        color: black;
+        background-color: #F1BC83;
+        border: 1px solid #F1BC83;
+        border-radius: 1rem;
+        padding: 5px 25px;
+        font-family: Roboto;
+        font-weight: bolder;
+        font-size: 1rem;
+
+        &:hover{
+            color: black;
+        }
+    }
+
+    .aplicacion{
+       text-align: center;
+    }
+}
